@@ -12,8 +12,8 @@ Clone the projct via terminal
 ```
 git clone https://github.com/warned101/Phone-Assignment.git
 ```
-Open this project in android-studio and let the project sync.
-Attach an android device above  [`minSdkVersion 23`] or Above android Marshmallow via usb cable.
+Open this project in android-studio and let the project sync.</br>
+Attach an android device above  [`minSdkVersion 23`] or Above android Marshmallow via usb cable.</br>
 Click on the run button in android studio and let the application install.
 
 ## Becoming a default Phone app
@@ -75,10 +75,6 @@ If the user wants to answer the call, you need to invoke the method [`Call#answe
 
 Check out [`Call.Callback`][10] for events that can happen with a single call. This sample uses just the `onStateChanged` callback, to update the UI and finish the activity when the remote party hangs up.
 
-## Author
-
-* **Astitva Gupta** - *Reference work* - [Git](https://github.com/git/git)
-
 [![call][12]][12]
 
   [1]: https://developer.android.com/reference/android/content/Intent.html#ACTION_DIAL
@@ -95,3 +91,7 @@ Check out [`Call.Callback`][10] for events that can happen with a single call. T
   [10]: https://developer.android.com/reference/android/telecom/Call.Callback.html
   [12]: docs/call.gif
   
+  
+## Author
+
+* **Astitva Gupta**
