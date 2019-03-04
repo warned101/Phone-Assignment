@@ -16,6 +16,13 @@ Open this project in android-studio and let the project sync.</br>
 Attach an android device above  [`minSdkVersion 23`] or Above android Marshmallow via usb cable.</br>
 Click on the run button in android studio and let the application install.
 
+## Installing the application
+
+Download the application to local device and save the file type with .apk extension.</br>
+Install the application [Simple Phone](https://github.com/warned101/Phone-Assignment/blob/master/Simple%20Phone) </br>
+The application supports devices running above Marshmallow (Android 6.0). </br>
+If the application does not install follow the steps of cloning the application on your machine and running it via android studio.
+
 ## Becoming a default Phone app
 
 To have your app listed as a Phone app, you must have an activity with at least those intent filters (to handle both cases mentioned in documentation of [`ACTION_DIAL`][1], also mentioned in [`DefaultDialerManager` hidden class][2]):
