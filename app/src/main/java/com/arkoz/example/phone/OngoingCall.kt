@@ -17,8 +17,6 @@ object OngoingCall {
             Timber.d(call.toString())
             state.onNext(newState)
         }
-
-        fun Context.toast(message: CharSequence) = Toast.makeText(this, "Call is picked", Toast.LENGTH_SHORT).show()
     }
 
     var call: Call? = null
