@@ -8,20 +8,20 @@ There are two steps an app has to make to show its own UI during an ongoing call
 
 ## Running the project on android device
 
-Clone the projct via terminal
+* Clone the projct via terminal
 ```
 git clone https://github.com/warned101/Phone-Assignment.git
 ```
-Open this project in android-studio and let the project sync.</br>
-Attach an android device above  [`minSdkVersion 23`] or Above android Marshmallow via usb cable.</br>
-Click on the run button in android studio and let the application install.
+* Open this project in android-studio and let the project sync.</br>
+* Attach an android device above  [`minSdkVersion 23`] or Above android Marshmallow via usb cable.</br>
+* Click on the run button in android studio and let the application install.
 
 ## Installing the application
 
-Download the application to local device and save the file type with .apk extension.</br>
-Install the application [Simple Phone](https://github.com/warned101/Phone-Assignment/blob/master/Simple%20Phone) </br>
-The application supports devices running above Marshmallow (Android 6.0). </br>
-If the application does not install follow the steps of cloning the application on your machine and running it via android studio.
+* Download the application to local device and save the file type with .apk extension.</br>
+* Install the application [Simple Phone](https://github.com/warned101/Phone-Assignment/blob/master/Simple%20Phone) </br>
+* The application supports devices running above Marshmallow (Android 6.0). </br>
+* If the application does not install follow the steps of cloning the application on your machine and running it via android studio.
 
 ## Becoming a default Phone app
 
