@@ -1,10 +1,11 @@
-package com.github.arekolek.phone
+package com.arkoz.example.phone
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.telecom.Call
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import io.reactivex.disposables.CompositeDisposable
@@ -51,12 +52,24 @@ class CallActivity : AppCompatActivity() {
     private fun updateUi(state: Int) {
         callInfo.text = "${state.asString().toLowerCase().capitalize()}\n$number"
 
+        var num:Int = 0
+
+        if (callInfo.text.equals("Ringing\n$number")) {
+            num = 1
+        }
+
         answer.isVisible = state == Call.STATE_RINGING
         hangup.isVisible = state in listOf(
             Call.STATE_DIALING,
             Call.STATE_RINGING,
             Call.STATE_ACTIVE
         )
+
+        if (callInfo.text.equals("Active\n$number")) {
+            if (num == 0){
+                Toast.makeText(applicationContext, "Call is now picked", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 
     override fun onStop() {

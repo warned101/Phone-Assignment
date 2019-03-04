@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.github.arekolek.phone"
+    package="com.arkoz.example.phone"
     >
 
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
-        android:name=".App"
+        android:name="com.arkoz.example.phone.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -17,7 +17,7 @@
         >
 
         <activity
-            android:name=".DialerActivity"
+            android:name="com.arkoz.example.phone.DialerActivity"
             android:windowSoftInputMode="stateAlwaysVisible|adjustResize"
             >
             <intent-filter>
@@ -42,7 +42,7 @@
         </activity>
 
         <service
-            android:name=".CallService"
+            android:name="com.arkoz.example.phone.CallService"
             android:permission="android.permission.BIND_INCALL_SERVICE"
             >
             <meta-data
@@ -54,7 +54,7 @@
             </intent-filter>
         </service>
 
-        <activity android:name=".CallActivity" />
+        <activity android:name="com.arkoz.example.phone.CallActivity" />
     </application>
 
 </manifest>

@@ -1,11 +1,15 @@
-package com.github.arekolek.phone
+package com.arkoz.example.phone
 
+import android.content.Context
 import android.telecom.Call
 import android.telecom.VideoProfile
+import android.widget.Toast
 import io.reactivex.subjects.BehaviorSubject
 import timber.log.Timber
 
 object OngoingCall {
+
+
     val state: BehaviorSubject<Int> = BehaviorSubject.create()
 
     private val callback = object : Call.Callback() {
@@ -13,6 +17,8 @@ object OngoingCall {
             Timber.d(call.toString())
             state.onNext(newState)
         }
+
+        fun Context.toast(message: CharSequence) = Toast.makeText(this, "Call is picked", Toast.LENGTH_SHORT).show()
     }
 
     var call: Call? = null

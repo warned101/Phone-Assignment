@@ -1,4 +1,4 @@
-package com.github.arekolek.phone
+package com.arkoz.example.phone
 
 import android.telecom.Call
 import timber.log.Timber
