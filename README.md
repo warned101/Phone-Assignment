@@ -6,6 +6,16 @@ This app uses [`minSdkVersion 23`](app/build.gradle), because that's when the AP
 
 There are two steps an app has to make to show its own UI during an ongoing call. One is to implement an [`InCallService`][5] that Android will use to notify you about events related to the calls. But before the system will let you know about any call, the user must first choose your app as the default Phone app, and you need to make it available to him as such.
 
+## Running the project on android device
+
+Clone the projct via terminal
+```
+git clone https://github.com/warned101/Phone-Assignment.git
+```
+Open this project in android-studio and let the project sync.
+Attach an android device above  [`minSdkVersion 23`] or Above android Marshmallow via usb cable.
+Click on the run button in android studio and let the application install.
+
 ## Becoming a default Phone app
 
 To have your app listed as a Phone app, you must have an activity with at least those intent filters (to handle both cases mentioned in documentation of [`ACTION_DIAL`][1], also mentioned in [`DefaultDialerManager` hidden class][2]):
@@ -64,6 +74,10 @@ There you should handle at least [`onCallAdded`][6] (set up listeners on `Call`,
 If the user wants to answer the call, you need to invoke the method [`Call#answer(int)`][8] (with [`VideoProfile.STATE_AUDIO_ONLY`][9] for example). In this example [`CallActivity`](app/src/main/java/com/github/arekolek/phone/CallActivity.kt) reacts to user input by calling those methods on `Call` object shared through the [`OngoingCall`](app/src/main/java/com/github/arekolek/phone/OngoingCall.kt) singleton.
 
 Check out [`Call.Callback`][10] for events that can happen with a single call. This sample uses just the `onStateChanged` callback, to update the UI and finish the activity when the remote party hangs up.
+
+## Author
+
+* **Astitva Gupta** - *Reference work* - [Git](https://github.com/git/git)
 
 [![call][12]][12]
 
